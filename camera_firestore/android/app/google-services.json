@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "273820252908",
+    "project_id": "ccfinalproject-a3183",
+    "storage_bucket": "ccfinalproject-a3183.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273820252908:android:f00f7e750227c4230743c9",
+        "android_client_info": {
+          "package_name": "com.example.camera_firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273820252908-qctnbf6vjgs5h7h10halom7k72dhaia8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf_7VMVAv_nq2Sd816-o7ngl3LW9dmzsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273820252908-qctnbf6vjgs5h7h10halom7k72dhaia8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
