@@ -1,4 +1,4 @@
-# CS4843Project
+# CS4843Projec
 
 ## Firebase
 Our flutter application utilizes firebase as its backend.
