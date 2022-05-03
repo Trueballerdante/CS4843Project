@@ -1,5 +1,5 @@
 
-- ### Functions
+### Functions
   - Important: In order to use the Function service, you need to upgrade your projects payment plan to the Blaze Plan.
   - Functions are used to execute code, a function, when a trigger occurs. In our case the cloud function handles events 
     triggered by the addition of new storage data. This new storage data, which should be an image, will be passed to the
