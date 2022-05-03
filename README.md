@@ -2,7 +2,6 @@
 
 ## Firebase
 Our flutter application utilizes firebase as its backend.
-Note: In order to use this Firebase setup
 
 ## Prerequisites
 - Create a firebase account
@@ -16,14 +15,15 @@ This can be done in four simple steps:
 - 4) Click on Continue to create the project
 
 ## Services Used
+Next, you need to setup all the firebase services.
 - ### Storage
-  - Storage is used as a bucket to store the uploaded images along with thier created thumbnails.
+  - Storage is used as a bucket to store the uploaded images along with their created thumbnails.
   - Storage creation steps:
     - Click on Storage in the left side menu
     - Click Get Started 
     - Select the "Start in test mode" option for the "Security rules for Cloud Storage". Click next
     - Select "nam5 (us-central)" as the Cloud Storage Location. Click Done
-  - After creating the storage bucket make sure to update the Rules to look like this:
+  - After creating the storage bucket, make sure to update the Rules to look like this:
     ```rules_version = '2';
        service firebase.storage {
           match /b/{bucket}/o {
@@ -46,7 +46,7 @@ This can be done in four simple steps:
     - Enter "thumbnails" for the Collection ID. Click next
     - Click "Auto-ID" for Document ID. Click Save
 - ### Functions
-  - Important: In order to use the Functions service, you need to upgrade your projects payment plan to the Blaze Plan.
+  - Important: In order to use the Function service, you need to upgrade your projects payment plan to the Blaze Plan.
   - Functions are used to execute code, a function, when a trigger occurs. In our case the cloud function handles events 
     triggered by the addition of new storage data. This new storage data, which should be an image, will be passed to the
     function and the function will create a thumbnail image based on the original image. The generated thumbnail will be 
@@ -56,7 +56,9 @@ This can be done in four simple steps:
     modified to store the data into the Firestore Database instead of a Realtime Database.
   - Function deployment steps:
     - 1) Open the appFunctions folder and run the command ```firebase init functions```. When prompted, select JavaScript
-    - 2) (Optional) Test the function with emulators
-    - 3) Run the command ```firebase deploy```
+    - 2) (Optional) Test the function with the emulators 
+    - 3) Deploy the project by running the command ```firebase deploy```
+    - 4) Go to your project's Cloud Console > IAM & admin > IAM, Find the App Engine default service account and add the Service 
+         Account Token Creator role to that member. This will allow your app to create signed public URLs to the images.
 
 - ### Add Firebase to the app
