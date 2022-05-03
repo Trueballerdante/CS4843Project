@@ -208,7 +208,7 @@ class ImageCard extends StatelessWidget {
           ),
         ),
         title: Text(data['fileName']), // changed to match collection field name
-        subtitle: const Text('Subtitle'),
+        subtitle: const Text('Tap to Download'),
       ),
     );
   }

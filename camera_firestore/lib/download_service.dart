@@ -15,7 +15,7 @@ class DownloadService {
     // Take in account the extension.
     String fileName = data['fileName']; // changed to match collection field name
     await dio.download(data['thumbnailPath'] , "${dir.path}/$fileName"); // changed (data[]) to match collection field name
-    OpenFile.open("${dir.path}/$fileName", type: 'image/png');
+    OpenFile.open("${dir.path}/$fileName", type: data['contentType']);
   }
 
   void showDownloadProgress(received, total) {
