@@ -60,5 +60,5 @@ Next, you need to setup all the firebase services.
     - 3) Deploy the project by running the command ```firebase deploy```
     - 4) Go to your project's Cloud Console > IAM & admin > IAM, Find the App Engine default service account and add the Service 
          Account Token Creator role to that member. This will allow your app to create signed public URLs to the images.
-
-- ### Add Firebase to the app
+         
+- ##
