@@ -61,7 +61,7 @@ Next, you need to setup all the firebase services.
     - 4) Go to your project's Cloud Console > IAM & admin > IAM, Find the App Engine default service account and add the Service 
          Account Token Creator role to that member. This will allow your app to create signed public URLs to the images.
          
-- ## Data Flow
+## Data Flow
 Our infrastructure incorporates a Flutter android application frontend that connects to a Firebase backend. When an image is
 uploaded through the application, it is directly sent to the firebase storage which triggers the cloud function. The cloud 
 function then takes the newly added image and creates a thumbnail. The thumbnail is added to the storage and the image url, 
