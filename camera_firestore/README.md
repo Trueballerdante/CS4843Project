@@ -13,7 +13,7 @@ Our application, in essence, takes an image from your camera or photo gallery an
 
 The core function of the app, which generates the thumbnail, utilizes Google Firebase in the cloud. The following diagram shows the general flow of the application, starting from the left:
 
-![App Diagram](/App_Diagram.png)
+![App Diagram](/camera_firestore/App_Diagram.png)
 
 1. The mobile app uploads a picked image to Firebase Storage
 2. A Firebase Cloud Function is triggered to generate a new thumbnail image from a newly uploaded image
