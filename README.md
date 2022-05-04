@@ -1,7 +1,12 @@
 # CS4843Project
 
 ## Firebase
-Our flutter application utilizes firebase as its backend.
+Our infrastructure incorporates a Flutter android application frontend that connects to a Firebase backend. When an image is
+uploaded through the application, it is directly sent to the firebase storage which triggers the cloud function. The cloud 
+function then takes the newly added image and creates a thumbnail. The thumbnail is added to the storage and the image url, 
+thumbnail url, file name, and mime type are stored in the "thumbnails" collection in the firestore database. The Flutter 
+application is then notified that data has been added to the collection and it retrieves the new thumbnail url and file name.
+The application updates the list of thumbnails using the new thumbnail url and file name. Lastly, tapping on the thumbnail will view it.
 
 ## Prerequisites
 - Create a firebase account
@@ -47,11 +52,3 @@ Next, you need to setup all the firebase services.
     - Click "Auto-ID" for Document ID. Click Save
 - ### Firebase Functions
   - Reference the README.md under appFunctions
-         
-## Data Flow
-Our infrastructure incorporates a Flutter android application frontend that connects to a Firebase backend. When an image is
-uploaded through the application, it is directly sent to the firebase storage which triggers the cloud function. The cloud 
-function then takes the newly added image and creates a thumbnail. The thumbnail is added to the storage and the image url, 
-thumbnail url, file name, and mime type are stored in the "thumbnails" collection in the firestore database. The Flutter 
-application is then notified that data has been added to the collection and it retrieves the new thumbnail url and file name.
-The application updates the list of thumbnails using the new thumbnail url and file name. Lastly, tapping on the thumbnail will view it.
