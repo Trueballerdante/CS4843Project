@@ -1,4 +1,5 @@
 # CS4843Project
+(Note: These Configurations are for Windows machines)
 
 ## Firebase
 Our infrastructure incorporates a Flutter android application frontend that connects to a Firebase backend. When an image is
@@ -23,7 +24,7 @@ This can be done in four simple steps:
 - 3) Disable Google Analytics
 - 4) Click on Continue to create the project
 
-## Services Used
+## Google services Used
 Next, you need to setup all the firebase services.
 - ### Storage
   - Storage is used as a bucket to store the uploaded images along with their created thumbnails.
