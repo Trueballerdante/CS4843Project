@@ -1,7 +1,7 @@
 # CS4843Project
 (Note: These Configurations are for Windows machines)
-  -[README for the Cloud functions](https://github.com/Trueballerdante/CS4843Project/blob/main/appFunctions/README.md)
-  -[README for the app](https://github.com/Trueballerdante/CS4843Project/blob/main/camera_firestore/README.md)
+-README for the [Cloud functions](https://github.com/Trueballerdante/CS4843Project/blob/main/appFunctions/README.md)
+-README for the [app](https://github.com/Trueballerdante/CS4843Project/blob/main/camera_firestore/README.md)
 
 ## Firebase
 Our infrastructure incorporates a Flutter android application frontend that connects to a Firebase backend. When an image is
