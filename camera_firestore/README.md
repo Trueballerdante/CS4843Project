@@ -27,15 +27,7 @@ The application requires the following tools installed on your machine:
 - [Dart & Flutter SDK](https://docs.flutter.dev/get-started/install)
 - [Android SDK](https://docs.flutter.dev/get-started/install/windows#android-setup)
 -- The application requires the Android 10 SDK (API Level 29) via the SDK manager in [Android Studio](https://docs.flutter.dev/get-started/install/windows#install-android-studio)
-- [NodeJS](https://nodejs.org/en/)
-- [Firebase CLI](https://firebase.google.com/docs/cli)
 - [FlutterFire CLI](https://firebase.flutter.dev/docs/cli)
-
-### Installing Flutter tools
-Make sure you have the Firebase CLI installed before installing FlutterFire, a Dart based tool to connect the Flutter app to a Firebase project:
-```
-npm install -g firebase-tools
-```
 
 If running Firebase CLI for the first time, be sure to use the `firebase login` command to link your Google account to the tool:
 ```
