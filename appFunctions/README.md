@@ -9,8 +9,9 @@
   - We utilized a premade function created by Firebase that generates a thumbnail based on an uploaded image. The function was
     modified to store the data into the Firestore Database instead of a Realtime Database.
   - Function deployment steps:
-    - 1) Open the appFunctions folder and run the command ```firebase init functions```. When prompted, select JavaScript
-    - 2) (Optional) Test the function with the emulators 
-    - 3) Deploy the project by running the command ```firebase deploy```
-    - 4) Go to your project's Cloud Console > IAM & admin > IAM, Find the App Engine default service account and add the Service 
+    - 1) Login to Firebase CLI using the command ```firebase login``` and enter your login information
+    - 2) Open the appFunctions folder and run the command ```firebase init functions```. When prompted, select JavaScript
+    - 3) (Optional) Test the function with the emulators 
+    - 4) Deploy the project by running the command ```firebase deploy```
+    - 5) Go to your project's Cloud Console > IAM & admin > IAM, Find the App Engine default service account and add the Service 
          Account Token Creator role to that member. This will allow your app to create signed public URLs to the images.
