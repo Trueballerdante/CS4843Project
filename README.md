@@ -45,6 +45,8 @@ Next, you need to setup all the firebase services.
     - Click Start Collection
     - Enter "thumbnails" for the Collection ID. Click next
     - Click "Auto-ID" for Document ID. Click Save
+- ### Firebase Functions
+  - Reference the README.md under appFunctions
          
 ## Data Flow
 Our infrastructure incorporates a Flutter android application frontend that connects to a Firebase backend. When an image is
