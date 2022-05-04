@@ -10,6 +10,10 @@ The application updates the list of thumbnails using the new thumbnail url and f
 
 ## Prerequisites
 - Create a firebase account
+- Install [Node.js](https://nodejs.org/en/) onto your computer
+- Install Firebase CLI using the following command:
+  - ```npm install -g firebase-tools```
+
 
 ## New Project Creation
 The first thing you need to do is create a new project.
